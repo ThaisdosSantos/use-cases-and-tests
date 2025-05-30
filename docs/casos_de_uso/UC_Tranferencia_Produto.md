@@ -1,0 +1,12 @@
+
+Transferir Produto Entre Lojas
+
+<details><summary>UC3 - Transferir Produto Entre Lojas</summary> <table> <thead> <tr align="center"> <th colspan="2">UC3 - Transferir Produto Entre Lojas</th> </tr> </thead> <tbody> <tr> <td width=2500px><strong>Ator Principal</strong></td> <td width=7500px>Estoquista</td> </tr> <tr> <td><strong>Pré-condições</strong></td> <td> - Estoquista deve estar autenticado no sistema.<br> - Produtos cadastrados no estoque da loja de origem.<br> - Loja de destino cadastrada e ativa no sistema. </td> </tr> <tr> <td><strong>Pós-condições</strong></td> <td> - Produto transferido da loja de origem para a loja de destino.<br> - Estoques das lojas atualizados corretamente.<br> - Registro da transferência salvo no sistema para auditoria. </td> </tr> <tr> <td><strong>Fluxo Principal</strong></td> <td> 1. Estoquista acessa o módulo de transferências no sistema.<br> 2. Sistema exibe a lista de produtos disponíveis para transferência na loja de origem.<br> 3. Estoquista seleciona o produto e especifica a quantidade a ser transferida.<br> 4. Estoquista seleciona a loja de destino.<br> 5. Sistema verifica a disponibilidade do produto e quantidade selecionada.<br> 6. Sistema confirma a operação e solicita confirmação do estoquista.<br> 7. Estoquista confirma a transferência.<br> 8. Sistema atualiza os estoques das duas lojas.<br> 9. Sistema registra a operação no histórico de movimentações.<br> 10. Sistema exibe mensagem de sucesso para o estoquista.<br>
+
+O caso de uso termina com a transferência registrada e os estoques atualizados.
+</td> </tr> <tr> <td><strong>Fluxos Alternativos</strong></td> <td> 3.A Produto indisponível na quantidade solicitada:<br> 3.A.1 Sistema informa a indisponibilidade.<br> 3.A.2 Estoquista pode ajustar a quantidade ou cancelar a operação.<br> 3.A.3 Se ajustar a quantidade, retorna ao passo 5.<br>
+
+5.A Loja de destino inválida ou inativa:<br>
+5.A.1 Sistema informa o erro.<br>
+5.A.2 Estoquista escolhe outra loja ou cancela a operação.<br>
+</td> </tr> <tr> <td><strong>Fluxos de Exceção</strong></td> <td> 8.A Erro na atualização do estoque:<br> 8.A.1 Sistema detecta falha e exibe mensagem de erro.<br> 8.A.2 Operação é revertida para manter integridade dos dados.<br> 8.A.3 Estoquista é orientado a tentar novamente.<br> </td> </tr> </tbody> </table> </details>
