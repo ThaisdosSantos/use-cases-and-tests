@@ -2,7 +2,7 @@
 
 Os casos de uso descrevem, de forma clara e estruturada, as interações entre os usuários (atores) e o sistema, detalhando os fluxos principais, alternativos e de exceção.
 
-👉 Acesse a pasta [`/casos-de-uso/`](./casos-de-uso/) para ver os arquivos.
+👉 Acesse a pasta [`/casos-de-uso/`](docs/casos_de_uso) para ver os arquivos.
 
 ---
 
@@ -10,7 +10,7 @@ Os casos de uso descrevem, de forma clara e estruturada, as interações entre o
 
 Os casos de teste validam o comportamento esperado descrito nos casos de uso. Cada teste possui pré-condições, entradas, passos e o resultado esperado.
 
-👉 Acesse a pasta [`/casos-de-teste/`](docs/casos_de_teste) para ver os arquivos.
+👉 Acesse a pasta [`/casos-de-teste/`](docs) para ver os arquivos.
 
 ---
 
